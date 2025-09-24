@@ -32,7 +32,7 @@ export function BottomNav() {
     // </nav>
 
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-md flex justify-around items-center py-2 text-sm font-medium">
-  <a href="/" title="Home" className="flex flex-col items-center text-gray-600 hover:text-black">
+  <a href="https://drippr.in/" title="Home" className="flex flex-col items-center text-gray-600 hover:text-black">
     <svg className="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
       <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z"/>
     </svg>
@@ -40,7 +40,7 @@ export function BottomNav() {
   </a>
 
 
-  <a href="/search" title="Search" className="flex flex-col items-center text-gray-600 hover:text-black">
+  <a href="https://drippr.in/search" title="Search" className="flex flex-col items-center text-gray-600 hover:text-black">
     <svg className="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
       <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 
         13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 
@@ -54,7 +54,7 @@ export function BottomNav() {
   </a>
 
 
-  <a href="/pages/dripprclub" title="Clubs" className="flex flex-col items-center text-gray-600 hover:text-black">
+  <a href="https://drippr.in/pages/dripprclub" title="Clubs" className="flex flex-col items-center text-gray-600 hover:text-black">
     <svg className="w-6 h-6 mb-1" fill="#FFD700" viewBox="0 0 24 24">
       <path d="M5 20h14l1-10-5 3-3-7-3 7-5-3 1 10z"/>
     </svg>
@@ -75,7 +75,7 @@ export function BottomNav() {
   </a>
 
 
-  <a href="/account" title="Account" className="flex flex-col items-center text-gray-600 hover:text-black">
+  <a href="https://drippr.in/account" title="Account" className="flex flex-col items-center text-gray-600 hover:text-black">
     <svg className="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
       <path d="M12 12C15.31 12 18 9.31 18 
       6C18 2.69 15.31 0 12 0C8.69 0 6 
