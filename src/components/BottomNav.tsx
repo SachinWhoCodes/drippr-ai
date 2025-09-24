@@ -63,14 +63,17 @@ export function BottomNav() {
 
   <a href="https://drippr-ai.vercel.app/" title="AI Stylist"
      className="flex flex-col items-center text-black hover:text-black">
-    <svg className="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 
-      0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 
-      0-4zM6.2 6l.9 2H20a1 1 0 0 1 
-      .98 1.2l-1.2 6a2 2 0 0 1-1.97 
-      1.6H9a2 2 0 0 1-1.9-1.37L4.2 
-      4H2V2h3a1 1 0 0 1 .95.68L6.2 6z"/>
+    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="ai-stylist-outlined" role="img">
+
+      <path d="M12 3a2 2 0 1 1 0 4v1l7 5v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7l7-5V7a2 2 0 0 1 0-4z"
+            fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+ 
+      <path d="M18 9l2-2M18 7l-1 1M6 9l-2-2M6 7l1 1" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+   
+      <circle cx="18" cy="18" r="3" fill="currentColor"/>
+      <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="4" font-family="Arial, Helvetica, sans-serif" fill="#fff">AI</text>
     </svg>
+
     AI Stylist
   </a>
 
