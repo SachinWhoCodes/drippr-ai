@@ -62,7 +62,7 @@ export function BottomNav() {
   </a>
 
   <a href="https://drippr-ai.vercel.app/" title="AI Stylist"
-     className="flex flex-col items-center text-white bg-black px-3 py-2 rounded-full shadow hover:bg-gray-800 transition">
+     className="flex flex-col items-center text-black hover:text-black">
     <svg className="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
       <path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 
       0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 
