@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DRIPPR Design System - Matching Actual Brand Identity */
+
+@layer base {
+  :root {
+    /* Core Brand Colors - Clean Black & White */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --surface: 0 0% 98%;
+    
+    /* Brand Palette - Actual DRIPPR Colors */
+    --primary: 0 0% 0%;        /* Pure Black */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 0 0% 10%;
+    
+    --secondary: 0 0% 100%;    /* Pure White */
+    --secondary-foreground: 0 0% 0%;
+    --secondary-hover: 0 0% 95%;
+    
+    /* Accent Colors - Minimal */
+    --accent: 0 0% 20%;        /* Dark Gray */
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 0 0% 30%;
+    
+    --highlight: 45 100% 50%;  /* Yellow accent like in bottom nav */
+    --highlight-foreground: 0 0% 0%;
+    
+    /* UI Colors */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+    --ring: 0 0% 0%;
+    
+    /* Clean Shadows */
+    --shadow-soft: 0 2px 10px hsl(0 0% 0% / 0.1);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.1);
+    --shadow-button: 0 2px 8px hsl(0 0% 0% / 0.15);
+    
+    /* Smooth Animations */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Theme - DRIPPR Style */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --surface: 0 0% 5%;
+    
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --primary-hover: 0 0% 90%;
+    
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 0 0% 15%;
+    
+    --accent: 0 0% 80%;
+    --accent-foreground: 0 0% 0%;
+    --accent-hover: 0 0% 70%;
+    
+    --highlight: 45 100% 50%;
+    --highlight-foreground: 0 0% 0%;
+    
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 60%;
+    
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+    
+    --border: 0 0% 20%;
+    --input: 0 0% 10%;
+    --ring: 0 0% 100%;
+    
+    --shadow-soft: 0 2px 10px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.4);
+    --shadow-button: 0 2px 8px hsl(0 0% 0% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary-hover));
+  }
+}
+
+@layer components {
+  /* DRIPPR Button Variants - Clean & Minimal */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary-hover shadow-[var(--shadow-button)] transition-[var(--transition-smooth)] font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary-hover border border-primary transition-[var(--transition-smooth)] font-medium;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:bg-accent-hover transition-[var(--transition-smooth)] font-medium;
+  }
+  
+  .btn-highlight {
+    @apply bg-highlight text-highlight-foreground hover:bg-highlight/90 transition-[var(--transition-smooth)] font-medium;
+  }
+  
+  /* Typography Styles */
+  .drippr-title {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+  }
+  
+  .fashion-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  
+  /* Card Styles */
+  .card-minimal {
+    @apply bg-card border border-border shadow-[var(--shadow-card)] transition-[var(--transition-smooth)];
+  }
+  
+  /* Hover Effects - Subtle */
+  .hover-lift {
+    @apply transition-[var(--transition-smooth)] hover:scale-[1.02] hover:shadow-[var(--shadow-card)];
+  }
+  
+  .hover-fade {
+    @apply transition-[var(--transition-smooth)] hover:opacity-80;
+  }
+}
